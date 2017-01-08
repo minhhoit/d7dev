@@ -1,0 +1,13 @@
+name = Modules example
+description = Demonstrates providing actions that can be associated to triggers.
+package = D7 modules
+core = 7.x
+; Since the namespacing feature is new as of Drupal 7.40, we have to require at
+; least that version of core.
+files[] = d7modules.test
+
+; Information added by Drupal.org packaging script on 2017-01-05
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "d7"
+datestamp = "1483648750"
