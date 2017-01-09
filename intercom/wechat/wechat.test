@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Tests for d7 example module.
+ */
+
+/**
+ * Functional tests for the Drupal 7 example module.
+ *
+ * @ingroup d7modules
+ */
+class D7ModulesTestCase extends DrupalWebTestCase {
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function getInfo() {
+    return array(
+      'name'        => 'D7 example functionality',
+      'description' => 'D7 example module',
+      'group'       => 'D7',
+    );
+  }
+
+  /**
+   * Enable modules and create user with specific permissions.
+   */
+  public function setUp() {
+    parent::setUp('d7modules');
+  }
+
+  /**
+   * Test the various menus.
+   */
+  public function testD7Modules() {
+  }
+}
